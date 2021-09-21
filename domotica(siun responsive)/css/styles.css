@@ -1,0 +1,213 @@
+/* utilizar todo el borde del sitio web y color de fondo */
+*{
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+	position: absolute;
+	top: 10px;
+	left: 550px;
+	width: 18%
+}
+body{
+	background: #808B96;
+	font-size: 20px;
+}
+.header{
+	width: 100%;
+}
+/* posicionamiento del menu y animacione del mismo*/
+.navegacion{
+	width: 520px;
+	margin: 90px auto;
+	background: #fff;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+.menu{
+	text-align: center;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+	padding: 4px;
+	font-size: 18px;
+}
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	text-decoration: none;
+}
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+.banner1{
+	position: absolute;
+	top: 0px;
+	z-index: -2;
+	width: 100%;
+	height: 80%
+}
+/* tamaño del contedor de del sitio web */
+.container{
+	text-align: center;
+	background: white;
+	z-index: 2px;
+	width: 82%;
+	margin: auto;
+	padding: 3em;
+}
+.container h2{
+      color:#D35400;
+}
+/* tarjetas de los diferentes productos */
+.tarjetas{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 30px;
+    font-size: 15px;
+    padding: 5%;
+    text-align: justify;
+    font-size: 16px;
+}
+.tarjetas h2{
+    color:#D35400;
+}
+.tarjetas div{
+	border:solid;
+	padding: 12px;
+}
+.tarjetas img{
+	border:solid;
+	width: 106%;
+	position: relative;
+	top: -43px;
+	left: 23px
+}
+.tarjetas a{
+	text-decoration: none;
+	color: black;
+}
+.tarjetas a:hover{
+	color: #808B96;
+	transition: all .3s;
+	text-decoration: underline;
+}
+.banner2{
+	width: 100%;
+	position: relative;
+	top: -50px;
+}
+.instalaciones{
+	text-align: center;
+	color: white;
+}
+/* Conjunto de imagenes */
+.casas1{
+	display: flex;
+	grid-template-columns: repeat(4,1fr);
+}
+.casas1 div{
+	 border: solid #2C3E50;
+}
+.casas1 img{
+	width: 100% ;
+	height: 100%;
+}
+.presentacion{
+	text-align: center;
+	margin: 70px;
+	color: white;
+	font-size: 19px;
+	background: #5D6D7E;
+	padding: 22px;
+}
+/* footer */
+.final1{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	background: #566573 ;
+	color: white;
+	padding: 20px;
+	list-style: none;
+	column-gap: 10px;
+	text-decoration: none;
+}
+.final1 a{
+	color: white;
+	text-decoration: none;
+}
+.icono_de_redes{
+	display: flex;
+}
+.icono_de_redes i{
+    font-size: 30px;
+    padding: 10px;
+}
+.final2{
+	background: #2C3E50 ;
+	color: white;
+	text-align: center;
+}
+.zoom:hover {
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+    transition:all .5s ease-in-out;
+}
+/* tamaño del input de la ventana de contactos */
+.tamano input{
+    width:40%;
+	height:40px;
+}
+/* pagina de servicios */
+.servicios{
+    font-size: 30px;
+    position: absolute;
+    top: 475px;
+    left: 580px;
+  	z-index: 2px;
+    background: white;
+}
+.linea{
+    position: relative;
+    border-top: 1px solid #AAA;
+    top: 20px;
+    left: 205px;
+    width: 60%;
+}
+.diferservicios{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	text-align: justify;
+}
+.diferservicios div{
+	padding: 10px;
+}
+.diferservicios a{
+	text-decoration: none;
+	color: black;
+}
+.diferservicios a:hover{
+	color: #808B96;
+	transition: all .3s;
+}
+.diferservicios img{
+	width: 95%;
+}
+/* pagina de nosotros */
+.tarjetas2 img{
+	border:solid;
+	width: 250px;
+	height: 230px;
+	position: relative;
+	top: -43px;
+	left: 23px
+}
+.terminos{
+	text-align: justify;
+}
