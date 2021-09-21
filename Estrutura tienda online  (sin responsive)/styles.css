@@ -1,0 +1,434 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 17px;
+    font-family: Roboto; src: url(Roboto-Italic.ttf);
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+.menu{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    background: white;
+}
+.menu a:hover,.submenu a:hover{
+    text-decoration: underline;
+}
+.img{
+    width: 100px;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    padding: 20px;
+}
+.submenu{
+	position: absolute;
+	background: #ffffff;
+    color: #000000;
+    /*no se muestra pero sigue ocupando sitio*/
+	visibility: hidden;
+	opacity: 0;
+    transition: opacity 1.5s;
+
+    font-size: 16px;
+}
+
+/*se activa cuando el usuario se desplaza sobre un elemento*/
+.menu li:hover .submenu{
+    font-size: 16px;
+    display: block;
+    visibility: visible;
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    font-weight: normal;
+}
+
+hr{
+    margin: 8px 0;
+}
+.video{
+    /*muestra una parte de la portada*/
+    overflow: hidden;
+    height: 500px;
+
+}
+.tienda{
+    color: #ffffff;
+    padding: 15px;
+}
+.tienda  h3{
+    position: absolute;
+    font-size: 60px;
+    left:470px;
+    top: 140px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
+.cpu{
+    width: 400px;
+    position: absolute;
+    top: 430px;
+    right: 100px;
+}
+.prod{
+    padding: 0px 0px 20px;
+    color: #be1400;
+
+}
+.tienda p{
+    position: absolute;
+    font-size: 23px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    font-weight: bolder;
+    top:550px;
+    right: 100px;
+}
+.tarjetas{
+ text-align: center;
+  /*una cuadrícula de una sola columna,*/
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*el espacio entre filas y columnas dentro de diseños de cuadrícula */
+  gap: 20px;
+  /*el área de espacio requerida en la parte inferior del elemento, fuera de cualquier borde definido.*/
+  margin-bottom: 20px;
+  font-size: 100%;
+
+}
+.tarjetas div{
+    padding: 10px 5% 80px;
+    box-shadow: 0px 0px 5px 1px black;
+    background: white;
+}
+.tarjetas img{
+    width: 100%;
+}
+.tarjetas a:hover{
+    text-decoration: underline;
+}
+.tarjetas img{
+    width: 76%;
+}
+
+.precio{
+    font-size: 16px;
+    font-weight: normal;
+}
+.negrita{
+    font-weight: bold;
+}
+.antes{
+    text-decoration: line-through;
+    font-size: 14px;
+}
+.boton1{
+    background: #bf0811;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 12px;
+}
+.boton1:hover {
+  background-color: #c43535;
+}
+.banner2 img{
+    width: 100%;
+    padding: 0px 0px 10px;
+}
+.promo{
+    width: 100%;
+}
+.social{
+    font-size: 30px;
+    padding: 10px;
+}
+.enlaces a i{
+  font-size: 50px;
+}
+.tarjetas2{
+    display: flex;
+}
+.tarjetas2 img{
+    width: 100%;
+}
+.tarjetas2 .celular3{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+.tarjetas2 div{
+    padding: 10px;
+}
+.celular3:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+.final1{
+    font-size: 16px;
+    background: #F14141 ;
+    color: white;
+    padding: 30px;
+}
+.final1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+.icono_de_redes{
+    display: flex;
+}
+.icono_de_redes i{
+    font-size: 30px;
+    padding: 10px;
+}
+.blanco{
+    color:white;
+}
+.logo2{
+    width: 50%;
+    filter: invert(1.00);
+}
+.final2{
+    background: #F11C1C ;
+    color: white;
+    text-align: center;
+}
+
+/*PAGINA TERMINOS Y CONDISCONES*/
+.terminos{
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+.terminos2{
+    margin: auto;
+    width: 80%;
+    padding: 30px;
+}
+.terminos2 h2{
+    font-size: 30px;
+}
+/*garantía*/
+.garantia{
+    font-size: 20px;
+    padding: 0px 30px 3%;
+}
+.reembolsos{
+    font-size: 20px;
+    padding: 50px;
+}
+.sucursales{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    font-size: 15px;
+    padding: 5%;
+}
+.sucursales img{
+    width: 80%;
+}
+.sucursales a:hover {
+    text-decoration: underline;
+}
+.linea{
+    position: relative;
+    border-top: 1px solid #AAA;
+}
+.tamaño{
+    padding: 13%;
+}
+/*categorias*/
+
+/*pc*/
+.presentacion{
+    font-size: 30px;
+    position: absolute;
+    top: 245px;
+    left: 450px;
+    background: white;
+}
+.zoom:hover {
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+    transition:all .5s ease-in-out;
+}
+
+.computadoras1{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    font-size: 13px;
+}
+.computadoras1 img{
+    width: 55%;
+}
+.computadoras1 div{
+    padding: 25% 13px 25%;
+    box-shadow: 0px 0px 5px 1px black;
+    background: white;
+}
+.computadoras2{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    font-size: 13px;
+}
+.computadoras2 img{
+    width: 55%;
+}
+.computadoras2 div{
+    padding: 25% 13px 25%;
+    box-shadow: 0px 0px 5px 1px black;
+    background: white;
+}
+/*smartphone*/
+.cel{
+    text-align: center;
+    padding: 20px;
+}
+.doble{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 150px;
+    padding: 20px;
+    font-size: 20px;
+}
+.doble img{
+    width: 120%;
+    border-right: 1px solid black;
+}
+
+input{
+    width: 70px;
+    height: 40px;
+    font-size: 20px;
+}
+.entrega{
+    gap: 15px;
+    display: flex;
+}
+.entrega input{
+    width: 175px;
+    height: 60px;
+}
+.descripcion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 150px;
+}
+.buscador{
+    text-align: center;
+}
+.buscador input{
+    width: 2%;
+}
+.buscador .entrada{
+    height: 40px;
+    width: 210px;
+}
+.buscador label{
+    padding: 10px;
+}
+.buscador  label{
+    position: relative;
+    top: -16px;
+}
+.publicacion{
+    display: none;
+}
+.data-list{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    font-size: 13px;
+}
+.data-list img{
+    width: 55%;
+}
+.data-list div{
+    padding: 25% 13px 25%;
+    box-shadow: 0px 0px 5px 1px black;
+    background: white;
+}
+.carrito{
+    position: absolute;
+    right:10%;
+}
+.iniciar{
+    position: absolute;
+    top: 13px;
+    right: 60px;
+    display: flex;
+    font-size: 15px;
+}
+.iniciar a{
+    padding: 5px;
+}
+.reg{
+    padding: 13px;
+    width: 50%;
+    height: 410px;
+    background: white;
+    position: relative;
+    top: 140px;
+    left: 350px;
+    text-align: center;
+
+}
+.reg div{
+    margin-bottom: 15px;
+}
+.input-contenedor input{
+    width: 50%;
+}
+.button{
+    width: 30%;
+    height: 40px;
+    font-size: 20px;
+    background: #be1400;
+    color: white;
+    border: none;
+    padding: 12px;
+    text-decoration:none;
+}
+.button:hover{
+    color:#e2b8b8;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.fondo img{
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    position: absolute;
+}
+.carritodecompra{
+    text-align: center;
+    font-size: 40px;
+}
